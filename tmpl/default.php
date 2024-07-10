@@ -1,10 +1,10 @@
 <?php
 /**
- * @package    [PACKAGE_NAME]
+ * @package    JOOMCraft Module
  *
  * @author     [AUTHOR] <[AUTHOR_EMAIL]>
  * @copyright  [COPYRIGHT]
- * @license    GNU General Public License version 2 or later; see LICENSE.txt
+ * @license    GNU General Public License version 3 or later; see LICENSE.txt
  * @link       [AUTHOR_URL]
  */
 
@@ -14,5 +14,5 @@ $domain = $params->get('domain', 'https://www.joomla.org');
 ?>
 
 <a href="<?php echo $domain; ?>">
-	<?php echo '[PROJECT_NAME]' . $test; ?>
+	<?php echo 'JOOMCraft ' . $test; ?>
 </a>
