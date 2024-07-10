@@ -3,8 +3,8 @@
  * @package    [Joomcraft_mod]
  *
  * @author     [AUTHOR] <[AUTHOR_EMAIL]>
- * @copyright  [COPYRIGHT]
- * @license    GNU General Public License version 2 or later; see LICENSE.txt
+ * @copyright   Copyright (C) 2024 Node Networks. All rights reserved.
+ * @license     GNU General Public License version 3; see LICENSE.txt
  * @link       [AUTHOR_URL]
  */
 
