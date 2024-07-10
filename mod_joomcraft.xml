@@ -33,7 +33,9 @@
                     type="number"
                     default="25565"
                     label="MOD_JOOMCRAFT_PORT_NUMBER_LABEL"
-                    filter="url"
+                    first="1"
+                    last="65535"
+                    step="1"
             />
             </fieldset>
             <fieldset name="advanced">
