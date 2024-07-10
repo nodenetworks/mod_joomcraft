@@ -27,6 +27,13 @@
                     label="MOD_JOOMCRAFT_FIELD_URL_LABEL"
                     filter="url"
                 />
+                
+            <field
+                    name="tcp_port_number"
+                    type="integer"
+                    label="MOD_JOOMCRAFT_PORT_NUMBER_LABEL"
+                    filter="url"
+            />
             </fieldset>
             <fieldset name="advanced">
                 <field
