@@ -30,7 +30,8 @@
                 
             <field
                     name="tcp_port_number"
-                    type="integer"
+                    type="number"
+                    default="25565"
                     label="MOD_JOOMCRAFT_PORT_NUMBER_LABEL"
                     filter="url"
             />
