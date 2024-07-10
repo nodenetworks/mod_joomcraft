@@ -1,10 +1,10 @@
 <?php
 /**
  * @package     Joomla.Site
- * @subpackage  mod_breadcrumbs
+ * @subpackage  mod_joomcraft
  *
- * @copyright   Copyright (C) 2005 - 2018 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @copyright   Copyright (C) 2024 Node Networks. All rights reserved.
+ * @license     GNU General Public License version 3; see LICENSE.txt
  */
 
 namespace JoomcraftNamespace\Module\Joomcraft\Site\Helper;
