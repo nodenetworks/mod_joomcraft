@@ -12,6 +12,8 @@
     <description>MOD_JOOMCRAFT_XML_DESCRIPTION</description>
     <media destination="mod_joomcraft">
         <folder>images</folder>
+        <filename>online.png</filename>
+        <filename>offline.png</filename>
     </media>
     <files>
         <filename module="mod_joomcraft">mod_joomcraft.php</filename>
