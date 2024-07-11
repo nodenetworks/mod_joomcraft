@@ -21,6 +21,14 @@
             <fieldset name="basic">
                 <field name="server_name" type="text" label="Server Name" description="The Minecraft server name" default="mc.eircraft.net" />
                 <field name="server_port" type="text" label="Server Port" description="The Minecraft server port" default="25565" />
+                <field name="online_image" type="list" label="Online Image" description="Select the image to display when the server is online">
+                    <option value="online.png">Online (Default)</option>
+                    <option value="custom_image.png">Custom Image</option>
+                </field>
+                <field name="offline_image" type="list" label="Offline Image" description="Select the image to display when the server is offline">
+                    <option value="offline.png">Offline (Default)</option>
+                    <option value="custom_image.png">Custom Image</option>
+                </field>
             </fieldset>
             <fieldset name="advanced">
                 <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" class="custom-select" />
