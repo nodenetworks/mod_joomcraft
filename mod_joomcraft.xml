@@ -10,11 +10,15 @@
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <version>1.0.0</version>
     <description>MOD_JOOMCRAFT_XML_DESCRIPTION</description>
+    <media destination="mod_joomcraft">
+        <folder>images</folder>
+    </media>
     <files>
         <filename module="mod_joomcraft">mod_joomcraft.php</filename>
         <folder>src</folder>
         <folder>tmpl</folder>
         <folder>assets</folder>
+        <folder>media/mod_joomcraft</folder>
     </files>
     <config>
         <fields name="params">
