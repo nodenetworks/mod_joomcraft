@@ -2,7 +2,7 @@
 /**
  * @package    JOOMCraft Module
  *
- * @author     [AUTHOR] <[AUTHOR_EMAIL]>
+ * @author     Michał Ostrykiewicz <[AUTHOR_EMAIL]>
  * @copyright  [COPYRIGHT]
  * @license    GNU General Public License version 3 or later; see LICENSE.txt
  * @link       [AUTHOR_URL]
@@ -27,6 +27,14 @@ defined('_JEXEC') or die;
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             initServerData("<?php echo $server_name; ?>", "<?php echo $server_port; ?>");
+
+            // Set the online status image
+            var isOnline = <?php echo $is_online ? 'true' : 'false'; ?>;
+            var onlineImage = '<?php echo $online_image; ?>';
+            var offlineImage = '<?php echo $offline_image; ?>';
+            
+            var statusImage = document.getElementById('status_image');
+            statusImage.src = isOnline ? '<?php echo JUri::base() . 'media/mod_joomcraft/' . $online_image; ?>' : '<?php echo JUri::base() . 'media/mod_joomcraft/' . $offline_image; ?>';
         });
     </script>
 </div>
