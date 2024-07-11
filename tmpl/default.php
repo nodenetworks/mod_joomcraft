@@ -35,6 +35,11 @@ defined('_JEXEC') or die;
             
             var statusImage = document.getElementById('status_image');
             statusImage.src = isOnline ? '<?php echo JUri::base() . 'media/mod_joomcraft/' . $online_image; ?>' : '<?php echo JUri::base() . 'media/mod_joomcraft/' . $offline_image; ?>';
+
+            // Set the server icon
+            var serverIcon = '<?php echo $serverData['server_icon']; ?>';
+            var serverIconImg = document.getElementById('server_icon');
+            serverIconImg.src = serverIcon;
         });
     </script>
 </div>
