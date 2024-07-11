@@ -8,11 +8,17 @@
  * @link       [AUTHOR_URL]
  */
 
+// No direct access
 defined('_JEXEC') or die;
 
-use Joomla\CMS\Helper\ModuleHelper;
-use JoomcraftNamespace\Module\Joomcraft\Site\Helper\JoomcraftHelper;
+// Include the helper file
+require_once __DIR__ . '/src/Helper/JoomcraftHelper.php';
 
-$test  = JoomcraftHelper::getText();
+$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
+$server_name = htmlspecialchars($params->get('server_name', 'mc.eircraft.net'));
+$server_port = htmlspecialchars($params->get('server_port', '25565'));
 
-require ModuleHelper::getLayoutPath('mod_joomcraft', $params->get('layout', 'default'));
+$serverData = JoomcraftNamespace\Module\Joomcraft\Site\Helper\JoomcraftHelper::getText();
+
+require JModuleHelper::getLayoutPath('mod_joomcraft', $params->get('layout', 'default'));
+?>
