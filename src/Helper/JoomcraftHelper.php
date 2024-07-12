@@ -38,6 +38,9 @@ class JoomcraftHelper
             // Convert binary data to base64 format
             $server_icon = 'data:image/png;base64,' . base64_encode($binaryImageData);
         }
+        // Get images from parameters
+        $online_image = $params->get('online_image', 'images/mod_joomcraft/online.png');
+        $offline_image = $params->get('offline_image', 'images/mod_joomcraft/offline.png');
 
         $result['is_online']    = $is_online;
         $result['motd']         = $motd;
