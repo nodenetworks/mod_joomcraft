@@ -14,8 +14,6 @@ defined('_JEXEC') or die;
 // Get parameters
 $server_name = $params->get('server_name');
 $server_port = $params->get('server_port');
-$online_image = $params->get('online_image', 'images/mod_joomcraft/online.png');
-$offline_image = $params->get('offline_image', 'images/mod_joomcraft/offline.png');
 
 ?>
 
@@ -26,9 +24,9 @@ $offline_image = $params->get('offline_image', 'images/mod_joomcraft/offline.png
             <h1 id="server_ip"><?php echo $server_name; ?></h1>
             <h1 id="is_online">
                 <?php if ($serverData['is_online']): ?>
-                    <img src="<?php echo $online_image; ?>" alt="Online" />
+                    <?php echo JText::_('MOD_JOOMCRAFT_ONLINE'); ?>
                 <?php else: ?>
-                    <img src="<?php echo $offline_image; ?>" alt="Offline" />
+                    <?php echo JText::_('MOD_JOOMCRAFT_OFFLINE'); ?>
                 <?php endif; ?>
             </h1>
             <span id="motd"><?php echo $serverData['motd']; ?></span>

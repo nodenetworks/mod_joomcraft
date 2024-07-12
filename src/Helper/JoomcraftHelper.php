@@ -3,7 +3,7 @@
  * @package     Joomla.Site
  * @subpackage  mod_joomcraft
  *
- * @license     GNU General Public License version 3; see LICENSE.txt
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 namespace JoomcraftNamespace\Module\Joomcraft\Site\Helper;
@@ -20,9 +20,11 @@ class JoomcraftHelper
     /**
      * Retrieve joomcraft data
      *
+     * @param   \Joomla\Registry\Registry  $params  The module parameters
+     *
      * @return  array
      */
-    public static function getText()
+    public static function getText($params)
     {
         $result       = [];
         $is_online    = true; // Example value, replace with actual logic to determine online status
@@ -38,9 +40,6 @@ class JoomcraftHelper
             // Convert binary data to base64 format
             $server_icon = 'data:image/png;base64,' . base64_encode($binaryImageData);
         }
-        // Get images from parameters
-        $online_image = $params->get('online_image', 'images/mod_joomcraft/online.png');
-        $offline_image = $params->get('offline_image', 'images/mod_joomcraft/offline.png');
 
         $result['is_online']    = $is_online;
         $result['motd']         = $motd;

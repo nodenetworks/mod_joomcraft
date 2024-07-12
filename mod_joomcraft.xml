@@ -19,19 +19,14 @@
         <folder>src</folder>
         <folder>tmpl</folder>
         <folder>assets</folder>
-        <folder>images/mod_joomcraft</folder>
+        <folder>language</folder>
+        <filename>LICENSE.txt</filename>
     </files>
     <config>
         <fields name="params">
             <fieldset name="basic">
                 <field name="server_name" type="text" label="MOD_JOOMCRAFT_SERVER_NAME" description="MOD_JOOMCRAFT_SERVER_NAME_DESC" default="mc.eircraft.net" />
                 <field name="server_port" type="text" label="MOD_JOOMCRAFT_SERVER_PORT" description="MOD_JOOMCRAFT_SERVER_PORT_DESC" default="25565" />
-                <field name="online_image" type="media" label="MOD_JOOMCRAFT_ONLINE_IMAGE" description="MOD_JOOMCRAFT_ONLINE_IMAGE_DESC" directory="mod_joomcraft">
-                    <option value="media/mod_joomcraft/online.png">Online (Default)</option>
-                </field>
-                <field name="offline_image" type="media" label="MOD_JOOMCRAFT_OFFLINE_IMAGE" description="MOD_JOOMCRAFT_OFFLINE_IMAGE_DESC" directory="mod_joomcraft">
-                    <option value="media/mod_joomcraft/offline.png">Offline (Default)</option>
-                </field>
             </fieldset>
             <fieldset name="advanced">
                 <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" class="custom-select" />
