@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="4" client="site" method="upgrade">
     <name>mod_joomcraft</name>
-    <creationDate>[DATE]</creationDate>
+    <creationDate>2024-07-12</creationDate>
     <author>Michał Ostrykiewicz</author>
     <creationDate>2024-07-11</creationDate>
     <authorEmail>[AUTHOR_EMAIL]</authorEmail>
     <authorUrl>[AUTHOR_URL]</authorUrl>
     <copyright>[COPYRIGHT]</copyright>
-    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
     <version>1.0.0</version>
     <description>MOD_JOOMCRAFT_XML_DESCRIPTION</description>
 	<media destination="images/mod_joomcraft">
@@ -19,7 +19,7 @@
         <folder>src</folder>
         <folder>tmpl</folder>
         <folder>assets</folder>
-        <folder>media/mod_joomcraft</folder>
+        <folder>images/mod_joomcraft</folder>
     </files>
     <config>
         <fields name="params">
