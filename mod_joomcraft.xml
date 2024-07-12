@@ -25,15 +25,13 @@
     <config>
         <fields name="params">
             <fieldset name="basic">
-                <field name="server_name" type="text" label="Server Name" description="The Minecraft server name" default="mc.eircraft.net" />
-                <field name="server_port" type="text" label="Server Port" description="The Minecraft server port" default="25565" />
-                <field name="online_image" type="list" label="Online Image" description="Select the image to display when the server is online">
-                    <option value="online.png">Online (Default)</option>
-                    <option value="custom_image.png">Custom Image</option>
+                <field name="server_name" type="text" label="MOD_JOOMCRAFT_SERVER_NAME" description="MOD_JOOMCRAFT_SERVER_NAME_DESC" default="mc.eircraft.net" />
+                <field name="server_port" type="text" label="MOD_JOOMCRAFT_SERVER_PORT" description="MOD_JOOMCRAFT_SERVER_PORT_DESC" default="25565" />
+                <field name="online_image" type="media" label="MOD_JOOMCRAFT_ONLINE_IMAGE" description="MOD_JOOMCRAFT_ONLINE_IMAGE_DESC" directory="mod_joomcraft">
+                    <option value="media/mod_joomcraft/online.png">Online (Default)</option>
                 </field>
-                <field name="offline_image" type="list" label="Offline Image" description="Select the image to display when the server is offline">
-                    <option value="offline.png">Offline (Default)</option>
-                    <option value="custom_image.png">Custom Image</option>
+                <field name="offline_image" type="media" label="MOD_JOOMCRAFT_OFFLINE_IMAGE" description="MOD_JOOMCRAFT_OFFLINE_IMAGE_DESC" directory="mod_joomcraft">
+                    <option value="media/mod_joomcraft/offline.png">Offline (Default)</option>
                 </field>
             </fieldset>
             <fieldset name="advanced">

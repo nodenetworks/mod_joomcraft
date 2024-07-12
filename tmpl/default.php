@@ -19,7 +19,7 @@ defined('_JEXEC') or die;
             <h1 id="server_ip"><?php echo $server_name; ?></h1>
             <h1 id="is_online">STATUS</h1>
             <span id="motd">A beautiful minecraft server</span>
-            <div><span id="player_count">x</span> of <span id="player_max">y</span> Players Online</div>
+            <div><span id="player_count"><?php echo $serverData['player_count']; ?></span> <?php echo JText::_('MOD_JOOMCRAFT_OF'); ?> <span id="player_max"><?php echo $serverData['player_max']; ?></span> <?php echo JText::_('MOD_JOOMCRAFT_PLAYERS_ONLINE'); ?></div>
         </div>
     </div>
     
