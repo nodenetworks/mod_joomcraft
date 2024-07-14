@@ -16,6 +16,9 @@ $server_name = $params->get('server_name');
 $server_port = $params->get('server_port');
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 
+// Load language strings into JavaScript
+JText::script('MOD_JOOMCRAFT_ONLINE');
+JText::script('MOD_JOOMCRAFT_OFFLINE');
 ?>
 
 <div class="joomcraft<?php echo $moduleclass_sfx; ?>">
