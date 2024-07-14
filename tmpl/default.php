@@ -39,14 +39,6 @@ JText::script('MOD_JOOMCRAFT_OFFLINE');
         </div>
     </div>
     
-    <script>
-        Joomla.loadOptions({
-            "text": {
-                "MOD_JOOMCRAFT_ONLINE": "<?php echo JText::_('MOD_JOOMCRAFT_ONLINE'); ?>",
-                "MOD_JOOMCRAFT_OFFLINE": "<?php echo JText::_('MOD_JOOMCRAFT_OFFLINE'); ?>"
-            }
-        });
-    </script>
     <script src="<?php echo JUri::base() . 'modules/mod_joomcraft/assets/script.js'; ?>"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
