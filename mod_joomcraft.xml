@@ -10,9 +10,6 @@
     <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
     <version>1.0.0</version>
     <description>MOD_JOOMCRAFT_XML_DESCRIPTION</description>
-	<media destination="images/mod_joomcraft">
-        <filename>online.png</filename>
-        <filename>offline.png</filename>
     </media>
     <files>
         <filename module="mod_joomcraft">mod_joomcraft.php</filename>
