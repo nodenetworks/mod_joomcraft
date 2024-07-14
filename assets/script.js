@@ -12,8 +12,8 @@ function handleServerStatus(data) {
         return false;
     }
 
-    const isOnline = document.getElementById("is_online");
-    isOnline.innerHTML = data.online;
+	const isOnline = document.getElementById("is_online");
+    isOnline.innerHTML = data.online ? 'Online' : 'Offline';
 
     const motd = document.getElementById("motd");
     motd.innerHTML = data.motd;
