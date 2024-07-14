@@ -11,6 +11,9 @@
 // No direct access
 defined('_JEXEC') or die;
 
+// Include the helper file
+JLoader::register('JoomcraftNamespace\Module\Joomcraft\Site\Helper\JoomcraftHelper', __DIR__ . '/src/Helper/JoomcraftHelper.php');
+
 use JoomcraftNamespace\Module\Joomcraft\Site\Helper\JoomcraftHelper;
 
 class ModJoomcraftHelper extends JoomcraftHelper
