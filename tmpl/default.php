@@ -14,6 +14,7 @@ defined('_JEXEC') or die;
 // Get parameters
 $server_name = $params->get('server_name');
 $server_port = $params->get('server_port');
+$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 
 ?>
 
@@ -23,7 +24,7 @@ $server_port = $params->get('server_port');
         <div>
             <h1 id="server_ip"><?php echo $server_name; ?></h1>
             <h1 id="is_online">
-				<?php echo JText::_('MOD_JOOMCRAFT_STATUS_LOADING'); ?>
+                <?php echo JText::_('MOD_JOOMCRAFT_STATUS_LOADING'); ?>
             </h1>
             <span id="motd"><?php echo $serverData['motd']; ?></span>
             <div>
@@ -35,6 +36,14 @@ $server_port = $params->get('server_port');
         </div>
     </div>
     
+    <script>
+        Joomla.loadOptions({
+            "text": {
+                "MOD_JOOMCRAFT_ONLINE": "<?php echo JText::_('MOD_JOOMCRAFT_ONLINE'); ?>",
+                "MOD_JOOMCRAFT_OFFLINE": "<?php echo JText::_('MOD_JOOMCRAFT_OFFLINE'); ?>"
+            }
+        });
+    </script>
     <script src="<?php echo JUri::base() . 'modules/mod_joomcraft/assets/script.js'; ?>"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
