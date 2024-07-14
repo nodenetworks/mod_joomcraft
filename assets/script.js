@@ -12,8 +12,8 @@ function handleServerStatus(data) {
         return false;
     }
 
-	const isOnline = document.getElementById("is_online");
-    isOnline.innerHTML = data.online ? 'Online' : 'Offline';
+    const isOnline = document.getElementById("is_online");
+    isOnline.innerHTML = data.online ? Joomla.JText._('MOD_JOOMCRAFT_ONLINE') : Joomla.JText._('MOD_JOOMCRAFT_OFFLINE');
 
     const motd = document.getElementById("motd");
     motd.innerHTML = data.motd;
