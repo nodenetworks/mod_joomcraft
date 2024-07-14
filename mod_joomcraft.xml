@@ -21,8 +21,54 @@
     <config>
         <fields name="params">
             <fieldset name="basic">
-                <field name="server_name" type="text" label="MOD_JOOMCRAFT_SERVER_NAME" description="MOD_JOOMCRAFT_SERVER_NAME_DESC" default="mc.eircraft.net" />
-                <field name="server_port" type="text" label="MOD_JOOMCRAFT_SERVER_PORT" description="MOD_JOOMCRAFT_SERVER_PORT_DESC" default="25565" />
+                <field
+					name="server_name"
+					type="text"
+					label="MOD_JOOMCRAFT_SERVER_NAME"
+					description="MOD_JOOMCRAFT_SERVER_NAME_DESC"
+					default="mc.eircraft.net" />
+                <field
+				name="server_port"
+				type="text"
+				label="MOD_JOOMCRAFT_SERVER_PORT"
+				description="MOD_JOOMCRAFT_SERVER_PORT_DESC"
+				default="25565" />
+				<field
+					name="show_server_icon"
+					type="radio"
+					default="1"
+					label="MOD_JOOMCRAFT_SHOW_SERVER_ICON_LABEL"
+					description="MOD_JOOMCRAFT_SHOW_SERVER_ICON_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="show_is_online"
+					type="radio"
+					default="1"
+					label="MOD_JOOMCRAFT_SHOW_IS_ONLINE_LABEL"
+					description="MOD_JOOMCRAFT_SHOW_IS_ONLINE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="show_motd"
+					type="radio"
+					default="1"
+					label="MOD_JOOMCRAFT_SHOW_MOTD_LABEL"
+					description="MOD_JOOMCRAFT_SHOW_MOTD_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="show_player_count"
+					type="radio"
+					default="1"
+					label="MOD_JOOMCRAFT_SHOW_PLAYER_COUNT_LABEL"
+					description="MOD_JOOMCRAFT_SHOW_PLAYER_COUNT_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
             </fieldset>
             <fieldset name="advanced">
                 <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" class="custom-select" />
