@@ -11,17 +11,17 @@
 // No direct access
 defined('_JEXEC') or die;
 
-// Include the helper file
+use JoomcraftNamespace\Module\Joomcraft\Site\Helper\JoomcraftHelper;
+
+class ModJoomcraftHelper extends JoomcraftHelper
+{
+}
+
+// Include the helper
 require_once __DIR__ . '/src/Helper/JoomcraftHelper.php';
 
-$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
-$server_name = htmlspecialchars($params->get('server_name', 'mc.eircraft.net'));
-$server_port = htmlspecialchars($params->get('server_port', '25565'));
-$is_online = (bool) $serverData['is_online'];
-$online_image = htmlspecialchars($params->get('online_image', 'online.png'));
-$offline_image = htmlspecialchars($params->get('offline_image', 'offline.png'));
+// Get module parameters
+$serverData = ModJoomcraftHelper::getText($params);
 
-$serverData = JoomcraftNamespace\Module\Joomcraft\Site\Helper\JoomcraftHelper::getText();
-
+// Load the layout
 require JModuleHelper::getLayoutPath('mod_joomcraft', $params->get('layout', 'default'));
-?>
